@@ -1,0 +1,1 @@
+Please note that the UISpec included in this product is distributed under a APACHE license that has been acquired by Experitest Ltd from the UISpec developer and Copyright owner Mr Brian Knorr
