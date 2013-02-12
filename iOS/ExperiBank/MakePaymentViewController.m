@@ -31,7 +31,7 @@
     [self.view setAccessibilityLabel:@"makePaymentView"];
     [phoneTextField setAccessibilityLabel:@"phoneTextField"];
     [nameTextField setAccessibilityLabel:@"nameTextField"];
-    [amountTextField setAccessibilityLabel:@"amountTextField"];
+    [amountSlider setAccessibilityLabel:@"amountSlider"];
     [countryTextField setAccessibilityLabel:@"countryTextField"];
     [countryButton setAccessibilityLabel:@"countryButton"];
     [sendPaymentButton setAccessibilityLabel:@"sendPaymentButton"];
@@ -42,10 +42,11 @@
 {
     phoneTextField = nil;
     nameTextField = nil;
-    amountTextField = nil;
     countryTextField = nil;
     countryButton = nil;
     sendPaymentButton = nil;
+    amountLabel = nil;
+    amountSlider = nil;
     [super viewDidUnload];
 }
 
@@ -63,7 +64,7 @@
 - (BOOL)readyToSignIn
 {
     return [phoneTextField.text length] != 0 && [nameTextField.text length] != 0
-    && [amountTextField.text length] != 0 && [countryTextField.text length] != 0;
+    && amountSlider.value > 0 && [countryTextField.text length] != 0;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)source
@@ -71,9 +72,7 @@
     if(source == phoneTextField)
         [nameTextField becomeFirstResponder];
     else if(source == nameTextField)
-        [amountTextField becomeFirstResponder];
-    else if(source == amountTextField)
-        [countryTextField becomeFirstResponder];
+        [amountSlider becomeFirstResponder];
     else if(source == countryTextField)
         [self sendPaymentPressed:source];
     
@@ -83,7 +82,7 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == 0) {
-        float balance = [[NSUserDefaults standardUserDefaults] floatForKey:@"Balance"] - [amountTextField.text floatValue];
+        float balance = [[NSUserDefaults standardUserDefaults] floatForKey:@"Balance"] - (int)amountSlider.value;
         [[NSUserDefaults standardUserDefaults] setFloat:balance forKey:@"Balance"];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
@@ -95,7 +94,7 @@
 {
     [phoneTextField resignFirstResponder];
     [nameTextField resignFirstResponder];
-    [amountTextField resignFirstResponder];
+    [amountSlider resignFirstResponder];
     [countryTextField resignFirstResponder];
     
     [[[UIAlertView alloc] initWithTitle:@"ExperiBank" message:@"Are you sure you want to send payment?" delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil] show];
@@ -110,7 +109,7 @@
 {
     [phoneTextField resignFirstResponder];
     [nameTextField resignFirstResponder];
-    [amountTextField resignFirstResponder];
+    [amountSlider resignFirstResponder];
     [countryTextField resignFirstResponder];
     
     CountryTableViewController *countryTableViewController = [[CountryTableViewController alloc] initWithNibName:@"CountryTableViewController" bundle:nil];
@@ -128,9 +127,13 @@
 	for(UITouch *touch in touches) {
         [phoneTextField resignFirstResponder];
         [nameTextField resignFirstResponder];
-        [amountTextField resignFirstResponder];
+        [amountSlider resignFirstResponder];
         [countryTextField resignFirstResponder];
 	}
 }
 
+- (IBAction)amountChanged:(id)sender {
+    amountLabel.text=[NSString stringWithFormat:@"Amount (%d$)", (int)amountSlider.value];
+    [sendPaymentButton setEnabled:[self readyToSignIn]];
+}
 @end

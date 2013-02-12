@@ -12,10 +12,12 @@
 {
     IBOutlet UITextField *phoneTextField;
     IBOutlet UITextField *nameTextField;
-    IBOutlet UITextField *amountTextField;
     IBOutlet UITextField *countryTextField;
     IBOutlet UIButton *countryButton;
     IBOutlet UIButton *sendPaymentButton, *cancelButton;
+    IBOutlet UILabel *amountLabel;
+    IBOutlet UISlider *amountSlider;
 }
+- (IBAction)amountChanged:(id)sender;
 
 @end
