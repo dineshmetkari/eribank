@@ -7,3 +7,4 @@ target/
 **/gen/
 **/bin/
 **/local.properties
+*/*.xcodeproj/**/xcuserdata/
