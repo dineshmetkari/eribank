@@ -90,9 +90,6 @@
     
     return YES;
 }
-- (IBAction)installPressed:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"itms-services://?action=download-manifest&url=https://s3.amazonaws.com/experitest/iphone/EriBank.plist"]];
-}
 
 - (IBAction)loginPressed:(id)source
 {

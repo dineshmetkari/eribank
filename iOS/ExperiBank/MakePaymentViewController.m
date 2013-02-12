@@ -118,6 +118,11 @@
     [self presentViewController:countryTableViewController animated:YES completion:nil];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+        [sendPaymentButton setEnabled:[self readyToSignIn]];
+}
+
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	for(UITouch *touch in touches) {
