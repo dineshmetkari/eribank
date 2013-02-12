@@ -5,3 +5,5 @@ target/
 *.prefs
 **/.settings
 **/gen/
+**/bin/
+**/local.properties
