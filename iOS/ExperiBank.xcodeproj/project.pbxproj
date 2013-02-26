@@ -30,7 +30,6 @@
 		13E5DDE61691136C00C5BE0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E5DDE51691136C00C5BE0D /* main.m */; };
 		13E5DDEA1691136C00C5BE0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E5DDE91691136C00C5BE0D /* AppDelegate.m */; };
 		13E5DDF01691136C00C5BE0D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13E5DDEF1691136C00C5BE0D /* Default-568h@2x.png */; };
-		FD69AF6416C12E6000BF1FE5 /* Experitest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD69AF6316C12E6000BF1FE5 /* Experitest.framework */; };
 		FD97A7D116BFD6AD00D9143E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E5DDE51691136C00C5BE0D /* main.m */; };
 		FD97A7D216BFD6AD00D9143E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E5DDE91691136C00C5BE0D /* AppDelegate.m */; };
 		FD97A7D316BFD6AD00D9143E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A81D5C169201AB00CD1486 /* LoginViewController.m */; };
@@ -54,6 +53,7 @@
 		FD97A7E816BFD6AD00D9143E /* CountryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353C163169AE4D000581713 /* CountryTableViewController.xib */; };
 		FD97A7E916BFD6AD00D9143E /* icon_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 131442D916A6C4F9005AA13A /* icon_ipad.png */; };
 		FD97A7EA16BFD6AD00D9143E /* icon_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 131442DC16A6C4FE005AA13A /* icon_ipad@2x.png */; };
+		FDDEEF7F16DCF3B50012B858 /* Experitest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD69AF6316C12E6000BF1FE5 /* Experitest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,12 +112,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDDEEF7F16DCF3B50012B858 /* Experitest.framework in Frameworks */,
 				FD97A7D816BFD6AD00D9143E /* QuartzCore.framework in Frameworks */,
 				FD97A7D916BFD6AD00D9143E /* CoreGraphics.framework in Frameworks */,
 				FD97A7DA16BFD6AD00D9143E /* CFNetwork.framework in Frameworks */,
 				FD97A7DB16BFD6AD00D9143E /* UIKit.framework in Frameworks */,
 				FD97A7DC16BFD6AD00D9143E /* Foundation.framework in Frameworks */,
-				FD69AF6416C12E6000BF1FE5 /* Experitest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

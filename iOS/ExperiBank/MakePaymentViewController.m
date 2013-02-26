@@ -72,6 +72,8 @@
         [nameTextField becomeFirstResponder];
     else if(source == nameTextField)
         [amountTextField becomeFirstResponder];
+    else if(source == amountTextField)
+        [countryTextField becomeFirstResponder];
     else if(source == countryTextField)
         [self sendPaymentPressed:source];
     
@@ -117,7 +119,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-        [sendPaymentButton setEnabled:[self readyToSignIn]];
+    [sendPaymentButton setEnabled:[self readyToSignIn]];
 }
 
 
