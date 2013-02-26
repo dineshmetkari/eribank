@@ -8,3 +8,5 @@ target/
 **/bin/
 **/local.properties
 */*.xcodeproj/**/xcuserdata/
+
+test/
