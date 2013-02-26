@@ -15,9 +15,6 @@
     IBOutlet UITextField *countryTextField;
     IBOutlet UIButton *countryButton;
     IBOutlet UIButton *sendPaymentButton, *cancelButton;
-    IBOutlet UILabel *amountLabel;
-    IBOutlet UISlider *amountSlider;
+    IBOutlet UITextField *amountTextField;
 }
-- (IBAction)amountChanged:(id)sender;
-
 @end
