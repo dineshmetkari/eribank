@@ -30,7 +30,6 @@
 		13E5DDE61691136C00C5BE0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E5DDE51691136C00C5BE0D /* main.m */; };
 		13E5DDEA1691136C00C5BE0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E5DDE91691136C00C5BE0D /* AppDelegate.m */; };
 		13E5DDF01691136C00C5BE0D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13E5DDEF1691136C00C5BE0D /* Default-568h@2x.png */; };
-		FD69AF6416C12E6000BF1FE5 /* Experitest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD69AF6316C12E6000BF1FE5 /* Experitest.framework */; };
 		FD97A7D116BFD6AD00D9143E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E5DDE51691136C00C5BE0D /* main.m */; };
 		FD97A7D216BFD6AD00D9143E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13E5DDE91691136C00C5BE0D /* AppDelegate.m */; };
 		FD97A7D316BFD6AD00D9143E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A81D5C169201AB00CD1486 /* LoginViewController.m */; };
@@ -54,6 +53,8 @@
 		FD97A7E816BFD6AD00D9143E /* CountryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1353C163169AE4D000581713 /* CountryTableViewController.xib */; };
 		FD97A7E916BFD6AD00D9143E /* icon_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 131442D916A6C4F9005AA13A /* icon_ipad.png */; };
 		FD97A7EA16BFD6AD00D9143E /* icon_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 131442DC16A6C4FE005AA13A /* icon_ipad@2x.png */; };
+		FDBA9373171D30D300BE3716 /* Experitest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA9372171D30D300BE3716 /* Experitest.framework */; };
+		FDBA9374171D310000BE3716 /* Experitest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBA9372171D30D300BE3716 /* Experitest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,9 +91,9 @@
 		13E5DDEB1691136C00C5BE0D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		13E5DDED1691136C00C5BE0D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		13E5DDEF1691136C00C5BE0D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FD69AF6316C12E6000BF1FE5 /* Experitest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Experitest.framework; sourceTree = "<group>"; };
 		FD97A7EE16BFD6AD00D9143E /* ExperiBankUIAutomation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExperiBankUIAutomation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD97A7EF16BFD6AD00D9143E /* ExperiBankUIAutomation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ExperiBankUIAutomation-Info.plist"; path = "/Users/StefanU/Documents/Silk Mobile/development/source/sampleapp/ios/ExperiBank/ExperiBankUIAutomation-Info.plist"; sourceTree = "<absolute>"; };
+		FDBA9372171D30D300BE3716 /* Experitest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Experitest.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDBA9373171D30D300BE3716 /* Experitest.framework in Frameworks */,
 				13E199C31695B6CE0063A488 /* QuartzCore.framework in Frameworks */,
 				13E5DDDE1691136C00C5BE0D /* CoreGraphics.framework in Frameworks */,
 				13E199BE1695B6840063A488 /* CFNetwork.framework in Frameworks */,
@@ -112,12 +114,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDBA9374171D310000BE3716 /* Experitest.framework in Frameworks */,
 				FD97A7D816BFD6AD00D9143E /* QuartzCore.framework in Frameworks */,
 				FD97A7D916BFD6AD00D9143E /* CoreGraphics.framework in Frameworks */,
 				FD97A7DA16BFD6AD00D9143E /* CFNetwork.framework in Frameworks */,
 				FD97A7DB16BFD6AD00D9143E /* UIKit.framework in Frameworks */,
 				FD97A7DC16BFD6AD00D9143E /* Foundation.framework in Frameworks */,
-				FD69AF6416C12E6000BF1FE5 /* Experitest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +160,7 @@
 		13E5DDD81691136C00C5BE0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FD69AF6316C12E6000BF1FE5 /* Experitest.framework */,
+				FDBA9372171D30D300BE3716 /* Experitest.framework */,
 				13E199C21695B6CE0063A488 /* QuartzCore.framework */,
 				13E199BD1695B6840063A488 /* CFNetwork.framework */,
 				13E5DDD91691136C00C5BE0D /* UIKit.framework */,
@@ -415,6 +417,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Experitest_iOS_hid/build/Release-iphoneos\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExperiBank/ExperiBank-Prefix.pch";
@@ -437,6 +440,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../Experitest_iOS_hid/build/Release-iphoneos\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExperiBank/ExperiBank-Prefix.pch";
