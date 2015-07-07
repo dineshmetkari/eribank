@@ -1,0 +1,1 @@
+This project will provide demo application both for Android and for iOS.
